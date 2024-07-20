@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "X59uXiY4XgrHfhNzoNrj2nTZgFdkFYveaDQl68LBIAo=",
+  "Source": "pizzaria-api",
+  "BasePath": "_content/pizzaria-api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
