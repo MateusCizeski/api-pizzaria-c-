@@ -14,7 +14,9 @@ namespace pizzaria_api.Model.Items
         public DateTime updated_at { get; set; }
         public string order_id { get; set; }
         public string product_id { get; set; }
-       
+
+        public Item() { }
+
         public Item(AddItemDTO dto)
         {
             this.id = Guid.NewGuid().ToString();
