@@ -11,6 +11,12 @@ namespace pizzaria_api.Controllers
     {
         private readonly IRepOrder _repOrder;
 
+        public OrderController(IRepOrder repOrder)
+        {
+            _repOrder = repOrder;
+        }
+
+        #region AddItem
         [HttpPost]
         [Route("AddItem")]
         public IActionResult AddItem(AddItemDTO dto)
@@ -20,7 +26,42 @@ namespace pizzaria_api.Controllers
 
             return Ok(itemOrder);
         }
+        #endregion
 
+        #region CreateOrder
+        [HttpPost]
+        public IActionResult CreateOrder(CreateOrderDTO dto)
+        {
+            var order = new Order(dto);
+            _repOrder.CreateOrder(order);
+
+            return Ok(order);
+        }
+        #endregion
+
+        #region DetailOrder
+        [HttpGet]
+        [Route("DetailOrder/{id}")]
+        public IActionResult DetailOrder([FromRoute] string id)
+        {
+            var order = _repOrder.DetailOrder(id);
+
+            return Ok(order);
+        }
+        #endregion
+
+        #region FinishOrder
+        [HttpPut]
+        [Route("FinishOrder/{id}")]
+        public IActionResult FinishOrder([FromRoute] string id)
+        {
+            var order = _repOrder.FinishOrder(id);
+
+            return Ok(order);
+        }
+        #endregion
+
+        #region ListOrders
         [HttpGet] 
         public IActionResult ListOrders()
         {
@@ -28,5 +69,39 @@ namespace pizzaria_api.Controllers
 
             return Ok(orders);
         }
+        #endregion
+
+        #region RemoverItem
+        [HttpDelete]
+        [Route("RemoverItem/{id}")]
+        public IActionResult RemoverItem([FromRoute] string id)
+        {
+            _repOrder.RemoveItem(id);
+
+            return Ok();
+        }
+        #endregion
+
+        #region RemoverOrder
+        [HttpDelete]
+        [Route("RemoverOrder/{id}")]
+        public IActionResult RemoverOrder([FromRoute] string id)
+        {
+            _repOrder.RemoveOrder(id);
+
+            return Ok();
+        }
+        #endregion
+
+        #region SendOrder
+        [HttpPut]
+        [Route("SendOrder/{id}")]
+        public IActionResult SendOrder([FromRoute] string id)
+        {
+            var order = _repOrder.SendOrder(id);
+
+            return Ok(order);
+        }
+        #endregion
     }
 }
