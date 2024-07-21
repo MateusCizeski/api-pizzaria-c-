@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using pizzaria_api.Model.Users.DTOs;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace pizzaria_api.Model.Users
@@ -14,14 +15,15 @@ namespace pizzaria_api.Model.Users
         public DateTime created_at { get; set; }
         public DateTime updated_at { get; set; }
 
-        public User(string id, string name, string email, string password, DateTime created_at, DateTime updated_at)
+        public User() { }
+        public User(CreateUserDTO dto)
         {
-            this.id = id;
-            this.name = name;
-            this.email = email;
-            this.password = password;
-            this.created_at = created_at;
-            this.updated_at = updated_at;
+            this.id = Guid.NewGuid().ToString();
+            this.name = dto.name;
+            this.email = dto.email;
+            this.password = dto.password;
+            this.created_at = DateTime.UtcNow;
+            this.updated_at = DateTime.UtcNow;
         }
     }
 }
