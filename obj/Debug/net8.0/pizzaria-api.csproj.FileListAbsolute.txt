@@ -5,7 +5,12 @@ C:\desenvMateus\backend\pizzaria-api\bin\Debug\net8.0\pizzaria-api.deps.json
 C:\desenvMateus\backend\pizzaria-api\bin\Debug\net8.0\pizzaria-api.runtimeconfig.json
 C:\desenvMateus\backend\pizzaria-api\bin\Debug\net8.0\pizzaria-api.dll
 C:\desenvMateus\backend\pizzaria-api\bin\Debug\net8.0\pizzaria-api.pdb
+C:\desenvMateus\backend\pizzaria-api\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\desenvMateus\backend\pizzaria-api\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\desenvMateus\backend\pizzaria-api\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\desenvMateus\backend\pizzaria-api\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\desenvMateus\backend\pizzaria-api\bin\Debug\net8.0\Npgsql.dll
+C:\desenvMateus\backend\pizzaria-api\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
 C:\desenvMateus\backend\pizzaria-api\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\desenvMateus\backend\pizzaria-api\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\desenvMateus\backend\pizzaria-api\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -16,6 +21,7 @@ C:\desenvMateus\backend\pizzaria-api\obj\Debug\net8.0\pizzaria-api.AssemblyInfo.
 C:\desenvMateus\backend\pizzaria-api\obj\Debug\net8.0\pizzaria-api.csproj.CoreCompileInputs.cache
 C:\desenvMateus\backend\pizzaria-api\obj\Debug\net8.0\pizzaria-api.MvcApplicationPartsAssemblyInfo.cs
 C:\desenvMateus\backend\pizzaria-api\obj\Debug\net8.0\pizzaria-api.MvcApplicationPartsAssemblyInfo.cache
+C:\desenvMateus\backend\pizzaria-api\obj\Debug\net8.0\pizzaria-api.sourcelink.json
 C:\desenvMateus\backend\pizzaria-api\obj\Debug\net8.0\staticwebassets.build.json
 C:\desenvMateus\backend\pizzaria-api\obj\Debug\net8.0\staticwebassets.development.json
 C:\desenvMateus\backend\pizzaria-api\obj\Debug\net8.0\staticwebassets\msbuild.pizzaria-api.Microsoft.AspNetCore.StaticWebAssets.props
@@ -30,9 +36,3 @@ C:\desenvMateus\backend\pizzaria-api\obj\Debug\net8.0\refint\pizzaria-api.dll
 C:\desenvMateus\backend\pizzaria-api\obj\Debug\net8.0\pizzaria-api.pdb
 C:\desenvMateus\backend\pizzaria-api\obj\Debug\net8.0\pizzaria-api.genruntimeconfig.cache
 C:\desenvMateus\backend\pizzaria-api\obj\Debug\net8.0\ref\pizzaria-api.dll
-C:\desenvMateus\backend\pizzaria-api\obj\Debug\net8.0\pizzaria-api.sourcelink.json
-C:\desenvMateus\backend\pizzaria-api\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
-C:\desenvMateus\backend\pizzaria-api\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-C:\desenvMateus\backend\pizzaria-api\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
-C:\desenvMateus\backend\pizzaria-api\bin\Debug\net8.0\Npgsql.dll
-C:\desenvMateus\backend\pizzaria-api\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll

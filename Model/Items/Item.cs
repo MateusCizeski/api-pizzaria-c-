@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using pizzaria_api.Model.Orders.DTOs;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace pizzaria_api.Model.Items
@@ -14,14 +15,14 @@ namespace pizzaria_api.Model.Items
         public string order_id { get; set; }
         public string product_id { get; set; }
        
-        public Item(string id, int amount, DateTime created_at, DateTime updated_at, string order_id, string product_id)
+        public Item(AddItemDTO dto)
         {
-            this.id = id;
-            this.amount = amount;
-            this.created_at = created_at;
-            this.updated_at = updated_at;
-            this.order_id = order_id;
-            this.product_id = product_id;
+            this.id = Guid.NewGuid().ToString();
+            this.amount = dto.amount;
+            this.order_id = dto.order_id;
+            this.product_id = dto.product_id;
+            this.created_at = DateTime.UtcNow;
+            this.updated_at = DateTime.UtcNow;
         }
     }
 }
