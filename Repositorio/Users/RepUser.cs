@@ -1,5 +1,6 @@
 ﻿using pizzaria_api.Model.Users;
 using pizzaria_api.Model.Users.DTOs;
+using pizzaria_api.Services;
 
 namespace pizzaria_api.Repositorio
 {
@@ -8,9 +9,18 @@ namespace pizzaria_api.Repositorio
         private readonly ConnectionContext _context = new ConnectionContext();
 
         #region AuthUser
-        public User AuthUser(AuthUserDTO dto)
+        public string AuthUser(AuthUserDTO dto)
         {
-            throw new NotImplementedException();
+            var user = _context.User.Where(p => p.email == dto.email).FirstOrDefault();
+
+            if (user == null)
+            {
+                throw new Exception("Email/Senha incorretos");
+            }
+
+            var token = TokenService.GenerateToken(user);
+
+            return token;
         }
         #endregion
 

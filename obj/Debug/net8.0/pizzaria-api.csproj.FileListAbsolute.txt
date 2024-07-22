@@ -36,3 +36,11 @@ C:\desenvMateus\backend\pizzaria-api\obj\Debug\net8.0\refint\pizzaria-api.dll
 C:\desenvMateus\backend\pizzaria-api\obj\Debug\net8.0\pizzaria-api.pdb
 C:\desenvMateus\backend\pizzaria-api\obj\Debug\net8.0\pizzaria-api.genruntimeconfig.cache
 C:\desenvMateus\backend\pizzaria-api\obj\Debug\net8.0\ref\pizzaria-api.dll
+C:\desenvMateus\backend\pizzaria-api\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\desenvMateus\backend\pizzaria-api\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\desenvMateus\backend\pizzaria-api\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\desenvMateus\backend\pizzaria-api\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\desenvMateus\backend\pizzaria-api\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\desenvMateus\backend\pizzaria-api\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\desenvMateus\backend\pizzaria-api\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\desenvMateus\backend\pizzaria-api\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
