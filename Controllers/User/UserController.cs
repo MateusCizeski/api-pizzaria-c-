@@ -20,7 +20,9 @@ namespace pizzaria_api.Controllers
         [Route("AuthUser")]
         public IActionResult AuthUser(AuthUserDTO dto)
         {
-            return Ok();
+            var token = _repUser.AuthUser(dto);
+
+            return Ok(token);
         }
         #endregion
 

@@ -7,12 +7,17 @@ namespace pizzaria_api.Repositorio
     public class RepOrder : IRepOrder
     {
         private readonly ConnectionContext _context = new ConnectionContext();
+        private readonly IRepItems _repItems;
+
+        public RepOrder(IRepItems repItems)
+        {
+            _repItems = repItems;
+        }
 
         #region AddItem
         public void AddItem(Item item)
         {
-            _context.Item.Add(item);
-            _context.SaveChanges();
+            _repItems.CreateItem(item);
         }
         #endregion
 
@@ -31,8 +36,7 @@ namespace pizzaria_api.Repositorio
 
             if(orderDetail == null)
             {
-                new Exception("Ordem não encontrada");
-                return null;
+                throw new Exception("Ordem não encontrada");
             }
 
             return orderDetail;
